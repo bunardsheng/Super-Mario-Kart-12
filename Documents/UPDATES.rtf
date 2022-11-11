@@ -1,0 +1,79 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2578
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\froman\fcharset0 Times-Roman;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs48 \cf0 Project Description
+\fs24 \
+\
+Super Mario Kart (Retro Style)\
+- This is a game based on Mario Kart. The game revolves around similar mechanics as the original incorporating various mechanics of physics such as velocity, acceleration, and collisions. The game features 8 characters, which the user is able to select to be their \'91player\'92. Utilizing the arrow keys, the player can speed up, move right or left, and backwards. The game is set on a map and is based on 3 laps, where the user must be the first to complete all 3 rounds in order to win against the AI.\
+\
+Competitive Analysis \
+\
+There are a few Super Mario Kart replicates, though the ones I saw utilized modules such as Panda 3D to create the player and the overall camera view. I was also inspired by a few pseudo-3D racing games online, such as outrun which seems to render the track segment by segment giving it a 3D-esque field. I want to replicate this concept while also incorporating the elements of Mario Kart such as power-ups, thematic tracks, and various characters to choose from.\
+\
+Structural Plan\
+\
+I will have a class of all the characters, maps, and items separately\
+The main game function will have them imported\
+\
+Algorithmic Plan:\
+\
+I plan to utilize trigonometrical concepts and 3D projection rules to make it seem like I have a birds eye view. I will have to translate the coordinates of the map into camera coordinates, which will them be transferred into a projection plane and scaled to the correct proportions.\
+\
+I will also employ the elastic collisions formula. I will do this by calculating the current velocities of the colliding objects, which can be found in timerFired. Their masses will be pre-determined based on the character attributes, and I will also take into account the angle they collided at. Utilizing basic trigonometry principles I will be able to determine the change in velocity of the colliding objects.\
+\
+I plan to incorporate AI into the game as well. I will first start by implanting this principle on a \'91red shell\'92 item which calculates the distance between centers and increases distance along a slope to the nearest player. I will have this as one of the AI who will be programmed to tail-end the player.\
+\
+I also want to implement curves which can be calculated by a depressing slope. \
+\
+Timeline:\
+\
+I aim to complete the collisions , curves, and the birdie view by TP2.\
+\
+Modules:\
+No modules utilized before MVP.\
+\
+I am backing up on GitHub, photo attached.\
+\
+\
+
+\fs96 UPDATES\
+MAY 1\
+\
+
+\fs36 - ADDED CURVES \
+- ADDED AI\
+- ADDDED PHYSICS COLLISIONS\
+- ADDED CHARACTER SELECT SHEET\
+- 3D ISOMETRIC BLOCKS\
+- COLLISION BOUNDS\
+- UPDATED GRAPHICS\
+- LAP TRACKER\
+- COUNTDOWN\
+- BANANA ITEMS\
+\
+
+\fs96 UPDATES\
+MAY 5 TP 3\
+\
+
+\fs48 - fine tuned game balance, adjusting player speed\
+- added a bird\'92s eye view to track player location\
+- added player ranking and leaderboard\
+- created items, featuring red shell, bullet, and mushroom\
+- removed hitboxes from gameplay\
+- added new splash screen, new character select with updated portraits \
+-added sound and endgame screen\
+-
+\fs96 \
+
+\fs36 \
+\
+
+\fs24 \
+\
+}
